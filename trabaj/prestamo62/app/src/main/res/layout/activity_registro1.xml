@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE3E3"
+    tools:context=".Registro1">
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="248dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bordes_textos"
+        android:ems="10"
+        android:fontFamily="@font/fascinate"
+        android:gravity="center"
+        android:hint="@string/correo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:background="@drawable/bordes_textos"
+        android:ems="10"
+        android:fontFamily="@font/fascinate"
+        android:gravity="center"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <EditText
+        android:id="@+id/contasena"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bordes_textos"
+        android:ems="10"
+        android:fontFamily="@font/fascinate"
+        android:gravity="center"
+        android:hint="@string/contrasena"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="198dp"
+        android:layout_height="67dp"
+        android:background="@drawable/bordes_boton"
+        android:fontFamily="@font/fascinate"
+        android:text="@string/registrarse"
+        app:layout_constraintBottom_toTopOf="@+id/cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contasena" />
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="203dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/bordes_boton"
+        android:fontFamily="@font/fascinate"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
